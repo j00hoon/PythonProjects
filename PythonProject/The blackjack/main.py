@@ -16,7 +16,6 @@ import random
 
 
 
-
 def play_game():
   final_result = ""
   user_card = []
