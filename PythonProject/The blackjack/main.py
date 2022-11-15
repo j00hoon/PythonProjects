@@ -21,7 +21,7 @@ def play_game():
   user_card = []
   com_card = []
 
-  for i in range(2):
+  for _ in range(2):
     user_card.append(deal_card())
     com_card.append(deal_card())
 
@@ -48,7 +48,7 @@ def play_game():
         final_result = "You win, you blackjack"
       
 
-    keep_going = str(input("Type 'y' to get another card, type 'n' to pass: "))
+    keep_going = input("Type 'y' to get another card, type 'n' to pass: ")
     if keep_going == "y":
       user_card.append(deal_card())
     else:
@@ -60,7 +60,7 @@ def play_game():
 
   final_result = compare(user_card_score, com_card_score)
 
-
+  print()
   print(f"User card : {user_card}")
   print(f"Com card : {com_card}")
   print(f"Final result : {final_result}")
@@ -94,6 +94,7 @@ def compare(user_score, computer_score):
 
 
 def calculate_score(card):
+  """Take a list of cards and return the score calculated from the cards"""
   card_sum = sum(card)
   if card_sum == 21 and len(card) == 2:
     return 0
@@ -108,6 +109,7 @@ def calculate_score(card):
   
 
 def deal_card():
+  """Pick randomly and return a card"""
   cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
   return random.choice(cards)
 

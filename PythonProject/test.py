@@ -29,8 +29,18 @@
 
 
 
-list_test = [1, 2, 3]
-com_win = 1 and 2 in list_test 
+# list_test = [1, 2, 3]
+# com_win = 1 and 2 in list_test 
 
-if com_win:
-    print("True")
+# if com_win:
+#     print("True")
+
+
+
+
+def a_function(a_parameter):
+    a_variable = 15
+    return a_parameter
+    
+a_function(10)
+# print(a_variable)
