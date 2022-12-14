@@ -18,7 +18,7 @@ class Player(Turtle):
         self.setpos(STARTING_POSITION)
         self.left(90)
 
-    def UP(self):
+    def up(self):
         self.goto(self.xcor(), self.ycor() + MOVE_DISTANCE)
 
     def check_location(self):
