@@ -16,17 +16,17 @@ class Player(Turtle):
         self.shape("turtle")
         self.color("black")
         self.setpos(STARTING_POSITION)
-        self.left(90)
+        self.setheading(90)
 
     def up(self):
-        self.goto(self.xcor(), self.ycor() + MOVE_DISTANCE)
+        self.forward(MOVE_DISTANCE)
 
-    def check_location(self):
-        if self.ycor() < 290:
-            return True
+    def success_to_finish_line(self):
+        if self.ycor() < FINISH_LINE_Y:
+            return False
         else:
             self.setpos(STARTING_POSITION)
-            return False
+            return True
 
 
 
