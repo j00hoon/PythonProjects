@@ -14,6 +14,7 @@ class Snake:
         self.segments = []
         self.create_snake()
         self.head = self.segments[0]
+        self.segments[0].color("green")
 
     def create_snake(self):
         for position in STARTING_POSITION:
@@ -43,6 +44,14 @@ class Snake:
             new_y = self.segments[seg - 1].ycor()
             self.segments[seg].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
+
+    def reset_snake(self):
+        for segment in self.segments:
+            segment.reset()
+        self.segments = []
+        self.create_snake()
+        self.head = self.segments[0]
+        self.segments[0].color("green")
 
     def up(self):
         if self.head.heading() != DOWN:
