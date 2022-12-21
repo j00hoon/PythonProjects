@@ -12,6 +12,12 @@ class Scoreboard(Turtle):
 
     def __init__(self):
         super().__init__()
+        with open("highest_score.txt") as file:
+            content = file.read()
+            if content == "":
+                self.highest_score = 0
+            else:
+                self.highest_score = int(content)
         self.hideturtle()
         self.goto(-25, 270)
         self.color("white")
@@ -38,5 +44,8 @@ class Scoreboard(Turtle):
         messagebox.showinfo("Game over", "You are dead!!!")
         self.goto(-25, 30)
         self.write("Game over", False, align=ALIGNMENT, font=FONT)
+        if self.score >= self.highest_score:
+            with open("highest_score.txt", mode="w") as file:
+                file.write(str(self.score))
 
 
