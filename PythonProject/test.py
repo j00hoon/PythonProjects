@@ -38,9 +38,14 @@
 
 
 
-def a_function(a_parameter):
-    a_variable = 15
-    return a_parameter
-    
-a_function(10)
+# def a_function(a_parameter):
+#     a_variable = 15
+#     return a_parameter
+#
+# a_function(10)
 # print(a_variable)
+
+
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = [num**2 for num in numbers]
+print(squared_numbers)
