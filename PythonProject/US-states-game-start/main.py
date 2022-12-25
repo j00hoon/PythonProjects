@@ -20,8 +20,9 @@ data = pandas.read_csv("./50_states.csv")
 all_state_original = data.state.to_list()
 all_states = []
 guessed_states = []
-for x in all_state_original:
-    all_states.append(x.lower())
+# for x in all_state_original:
+#     all_states.append(x.lower())
+all_states = [x.lower() for x in all_state_original]
 
 guessed_states = all_states.copy()
 answer_cnt = 0
@@ -30,7 +31,6 @@ game_is_on = True
 while game_is_on:
     answer_from_user = screen.textinput(title=f"{answer_cnt}/50   Guess the state!", prompt="Your answer is").lower()
 
-    # if len(data[data['state'].str.lower() == answer_from_user.lower()]) == 0:
     if answer_from_user not in all_states:
         if answer_from_user == 'exit':
             game_is_on = False
@@ -60,3 +60,6 @@ while game_is_on:
 
 
 screen.exitonclick()
+
+
+# missing_states = [state for state in all_states if answer_state == "Exit" and state not in guessed_states]
