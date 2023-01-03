@@ -1,0 +1,3 @@
+google | j00hoon1101@gmail.com | 1234
+amazon | j00hoon1101@gmail.com | 22222
+aaa | j00hoon1101@gmail.com | 

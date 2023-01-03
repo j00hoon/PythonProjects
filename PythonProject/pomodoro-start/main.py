@@ -46,7 +46,7 @@ def start_count_down():
         timer_label.config(text="Short break", font=(FONT_NAME, 35, "bold"), background=YELLOW, foreground=RED)
     else:
         count_down_time = WORK_MIN * 60
-        timer_label.config(text="Work", font = (FONT_NAME, 35, "bold"), background=YELLOW, foreground=GREEN)
+        timer_label.config(text="Work", font=(FONT_NAME, 35, "bold"), background=YELLOW, foreground=GREEN)
     count_down(count_down_time)
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
