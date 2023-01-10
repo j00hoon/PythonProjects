@@ -46,6 +46,30 @@
 # print(a_variable)
 
 
-numbers = [1, 2, 3, 4, 5]
-squared_numbers = [num**2 for num in numbers]
-print(squared_numbers)
+# numbers = [1, 2, 3, 4, 5]
+# squared_numbers = [num**2 for num in numbers]
+# print(squared_numbers)
+
+
+
+
+
+
+string = "googlee"
+test_dic = {
+    "google" : {
+        "email" : "aa@aa.com"
+    }
+}
+
+if string in test_dic:
+    print(string)
+
+
+
+
+
+
+
+
+

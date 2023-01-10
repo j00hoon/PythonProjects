@@ -1,5 +1,11 @@
 import tkinter
 import random
+from tkinter import messagebox
+
+# Not recommended
+import sys
+
+sys.setrecursionlimit(1500)
 
 
 FONT_NAME = "Courier"
@@ -48,7 +54,7 @@ def condition_numbers_in_range():
     if range_1 == 3 and range_2 == 2:
         condition_sum_numbers(True)
     else:
-        return False
+        start_select_numbers()
 
 
 # Check sum of numbers whether in range 132~240
@@ -77,7 +83,16 @@ def check_final_numbers(condition):
         number5.itemconfig(number5_text, text=LIST_NUMBERS[4])
         number6.itemconfig(number6_text, text=LIST_NUMBERS[5])
         result_label.config(text="Your number!", font=(FONT_NAME, 35, "bold"), background=YELLOW, foreground=GREEN)
+        messagebox.showinfo(title="Your number!!", message=f"{LIST_NUMBERS[0]} {LIST_NUMBERS[1]} {LIST_NUMBERS[2]} {LIST_NUMBERS[3]} {LIST_NUMBERS[4]} {LIST_NUMBERS[5]}")
         print(LIST_NUMBERS)
+    else:
+        LIST_NUMBERS.extend(random.sample(MEGA_NUMBERS, 1))
+        number1.itemconfig(number1_text, text=LIST_NUMBERS[0])
+        number2.itemconfig(number2_text, text=LIST_NUMBERS[1])
+        number3.itemconfig(number3_text, text=LIST_NUMBERS[2])
+        number4.itemconfig(number4_text, text=LIST_NUMBERS[3])
+        number5.itemconfig(number5_text, text=LIST_NUMBERS[4])
+        number6.itemconfig(number6_text, text=LIST_NUMBERS[5])
     LIST_NUMBERS = []
     start_select_numbers()
 
