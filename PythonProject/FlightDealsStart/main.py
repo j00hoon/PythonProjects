@@ -7,13 +7,18 @@ from notification_manager import NotificationManager
 
 dataManager = DataManager()
 flightSearch = FlightSearch()
-flightData = FlightData()
 notificationManager = NotificationManager()
 
 flight_list = dataManager.retrieveFlightFromSheet()
 cheapest_ticket = flightSearch.searchFlight(flight_list)
-# flightData.compareLowestPrice(cheapest_ticket)
-# notificationManager.sendNotification(cheapest_ticket)
+
+for data in cheapest_ticket:
+    flightData = FlightData(data["max_stopovers"], data["via_city"], data["fly_from"], data["airport_from"],
+                            data["destination_city"], data["destination_airport"], data["date_from"],
+                            data["date_to"], data["id"], data["iataCode"], data["lowestPrice"])
+    flightData.compareLowestPrice(cheapest_ticket)
+
+notificationManager.sendNotification(cheapest_ticket)
 
 
 
