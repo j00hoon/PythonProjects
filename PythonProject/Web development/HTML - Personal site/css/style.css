@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: tahoma, verdana, sans-serif;
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 90px;
+    color: #66BFBF;
+    line-height: 2;
+}
+
+h2{
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3{
+    color: #11999E;
+    font-size: 25px;
+}
+
+a{
+    color: #11999E;
+}
+
+hr{
+    border-color: white;
+    border-width: 10px;
+    border-style: dotted none none none;
+    width: 25%;
+}
+
+.img:hover{
+    height: 350px;
+    width: 600px;
+    background-color: pink;
+}
+
+
+#skills{
+    color: green;
+}
+
+
+#newyorkimg{
+    height: 400px;
+    width: 700px;
+}
+
+
+.apple{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+}
+
+.banana{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+}
+
+.chillies-img{
+    width: 25%;
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+.computer-img{
+    width: 25%;
+    float: right;
+    margin: 0 0 0 30px;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto 180px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.top-div{
+    background-color: #E4F9F5;
+    padding-top: 50px;
+    position: relative;
+}
+
+.middle-div{
+
+}
+
+.bottom-div{
+
+}
+
+
+.top-cloud{
+    position: absolute;
+    right: 600px;
+    top: 30px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 750px;
+    bottom: 250px;
+}

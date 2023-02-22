@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My contact info</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+
+<script type="text/javascript">
+
+    function showInfo(form){
+        alert(form.name.value);
+    }
+
+
+</script>
+
+</head>
+<body>
+
+    <h3>This is h3~~</h3>
+    <h3><a href="contact.html">Contact me</a></h3>
+    <ol>
+        <li><a href="https://j00hoon.github.io/seunghoon.baik/">Website</a></li>
+        <li><a href="">Email : test@gmail.com</a></li>
+    </ol>
+
+    <hr>
+
+    <form class="" method="post" action="" id="form1">
+        <label>Name : </label><input type="text" name="name"><br>
+        <label>Age : </label><input type="number" name="age"><br>
+        <label>Color : </label><input type="color" name="color"><br>
+        <label>Checkbox : </label><input type="checkbox" name="checkbox"><br>
+        <label>Password : </label><input type="password" name="password"><br>
+        <label>Email : </label><input type="email" name="email"><br>
+        <input type="date" name="date"><br>
+        <input type="range" name="range"><br>
+
+        <input type="button" onclick="showInfo(this.form);" value="Submit"><br>
+        <button type="submit" onclick="showInfo">Submit</button>
+
+    </form>
+
+</body>
+</html>
