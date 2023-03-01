@@ -104,12 +104,14 @@ movie_page = response.text
 
 soup = BeautifulSoup(movie_page, "html.parser")
 
-movie_div_list = soup.find_all(name="div", class_="article-title-description__text")
+movie_div_list = soup.find_all(name="h3", class_="title")
+
+movie_list = [title.getText() for title in movie_div_list]
+movie_list = movie_list[::-1]
 
 with open(file="./100_movie.txt", mode="w+", encoding="utf8") as file:
-    for movie_title in movie_div_list:
-        # print(movie_title.find_next(name="h3").getText())
-        file.write(f"{movie_title.find_next(name='h3').getText()}\n")
+    for movie in movie_list:
+        file.write(f"{movie}\n")
 
 
 
