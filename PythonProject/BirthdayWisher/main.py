@@ -3,7 +3,7 @@ import datetime as dt
 import random
 
 my_email = "j00hoon1101@gmail.com"
-password = "btpygqgeztdqczhl"
+password = ""
 
 # with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
 #     connection.starttls()

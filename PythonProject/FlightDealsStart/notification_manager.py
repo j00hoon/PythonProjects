@@ -13,7 +13,7 @@ class NotificationManager:
 
         # Send email
         EMAIL = "j00hoon1101@gmail.com"
-        PASSWORD = "btpygqgeztdqczhl"
+        PASSWORD = ""
         "STN.SXF.2020-08-25*SXF.STN.2020-09-08"
         URL = f"https://www.google.co.uk/flights?hl=en#flt="
 

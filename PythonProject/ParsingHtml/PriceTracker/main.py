@@ -18,7 +18,7 @@ product_price = float(product_price_html.getText().split("$")[1])
 if product_price < TARGET_PRICE:
     # Sending email
     EMAIL = "j00hoon1101@gmail.com"
-    PASSWORD = "btpygqgeztdqczhl"
+    PASSWORD = ""
     "STN.SXF.2020-08-25*SXF.STN.2020-09-08"
     MESSAGE = f"The product price is {product_price}.\n It is lower than our target price which is {TARGET_PRICE}!!!"
 
