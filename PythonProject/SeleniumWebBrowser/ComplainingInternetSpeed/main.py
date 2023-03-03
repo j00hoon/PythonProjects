@@ -77,6 +77,7 @@ class InternetSpeedTwitterBot:
 
 
 internet_speed = InternetSpeedTwitterBot()
+
 internet_speed.get_internet_speed()
 internet_speed.tweet_at_provider()
 

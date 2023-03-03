@@ -61,7 +61,7 @@ news_response.raise_for_status()
 news_data = news_response.json()["articles"][:3]
 
 TWILIO_ACC_ID = "AC1a305ab447847a279048063326d49dba"
-TWILIO_AUTH_TOKEN = "7016c5d1caf402afae73575b691aca51"
+TWILIO_AUTH_TOKEN = ""
 
 article_list = [f"{COMPANY_NAME}: {CHANGE}\nHeadline: {data['title']}\nBrief: {data['description']}" for data in news_data]
 
@@ -70,7 +70,7 @@ for article in article_list:
     message = client.messages.create(
         body=article,
         from_="+18777152263",
-        to="2016915073"
+        to="5073"
     )
     print(message.status)
 
