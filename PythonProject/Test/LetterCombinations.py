@@ -17,24 +17,26 @@ class Solution:
 
         res_list = []
         tmp_list = []
-        t_list = []
+        # t_list = []
 
         for index in range(0, len(digits)):
             if digits[index] in number_dict:
                 tmp_list.append(number_dict[digits[index]])
-                print(number_dict[digits[index]])
 
+        # for words in tmp_list:
+        #     t_list += words
 
-
-
-        # t_list = [ for word in tmp_list]
-
-        # tmp_list = list(itertools.product(*tmp_list))
+        ### Compute all cartesian values from tmp_list
+        tmp_list = list(itertools.product(*tmp_list))
+        # print(tmp_list)
 
         for i in tmp_list:
-            res_list.append("".join(map(str, i)))
+            ### i is tuple, so need to make as string
+            ### use "".join() to make a tuple as a string
+            res_list.append("".join(i))
 
         return res_list
+
 
 sol = Solution()
 string = "23"
