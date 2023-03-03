@@ -1,0 +1,153 @@
+1677859234501	geckodriver	INFO	Listening on 127.0.0.1:54397
+1677859237526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54398" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\j00ho\\AppData\\Local\\Temp\\rust_mozprofileX9EnKs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677859238632	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677859238638	Marionette	INFO	Listening on port 54406
+Read port: 54406
+WebDriver BiDi listening on ws://127.0.0.1:54398
+1677859238849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\j00ho\\AppData\\Local\\Temp\\rust_mozprofileX9EnKs\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54398/devtools/browser/b861dd1d-5500-4ab3-a372-b7428a7af4c9
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yM/l/en_US/2ymNkCA5Ma0.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yM/l/en_US/2ymNkCA5Ma0.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "Unable to find target with innerWindowId:6442450946"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yM/l/en_US/2ymNkCA5Ma0.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/shared/network-observer/NetworkUtils.sys.mjs:91:1
+createNetworkEvent@resource://devtools/shared/network-observer/NetworkUtils.sys.mjs:179:33
+#createNetworkEvent@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:717:37
+#onRequestHeader@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:767:29
+@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:637:28
+makeInfallible/<@resource://devtools/shared/DevToolsInfaillibleUtils.sys.mjs:43:22
+Line: 91, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/shared/network-observer/NetworkUtils.sys.mjs", 91))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: #sendRequestBody@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:1526:7
+#dispatchActivity@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:555:30
+@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:667:29
+makeInfallible/<@resource://devtools/shared/DevToolsInfaillibleUtils.sys.mjs:43:22
+Line: 1526, column: 7
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/shared/network-observer/NetworkObserver.sys.mjs", 1526))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: #onResponseHeader@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:1064:5
+#dispatchActivity@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:558:31
+@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:667:29
+makeInfallible/<@resource://devtools/shared/DevToolsInfaillibleUtils.sys.mjs:43:22
+Line: 1064, column: 5
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/shared/network-observer/NetworkObserver.sys.mjs", 1064))
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/shared/network-observer/NetworkUtils.sys.mjs:91:1
+createNetworkEvent@resource://devtools/shared/network-observer/NetworkUtils.sys.mjs:179:33
+#createNetworkEvent@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:717:37
+@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:345:35
+makeInfallible/<@resource://devtools/shared/DevToolsInfaillibleUtils.sys.mjs:43:22
+Line: 91, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/shared/network-observer/NetworkUtils.sys.mjs", 91))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("nodeFront.walkerFront is null", "resource://devtools/client/inspector/markup/markup.js", 1012))
+TypeError: nodeFront.walkerFront is null: _onNewSelection@resource://devtools/client/inspector/markup/markup.js:1012:7
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+setNodeFront@resource://devtools/client/framework/selection.js:203:10
+onDetached@resource://devtools/client/inspector/inspector.js:1685:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+_onMutations@resource://devtools/client/framework/selection.js:104:12
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new Error("Can not send request 'getUniqueSelector' because front 'domnode' is already destroyed.", "resource://devtools/shared/protocol/Front/FrontClassWithSpec.js", 28))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: (new TypeError("node is null", "resource://devtools/server/actors/page-style.js", 1007))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.windowGlobal6442450949/pagestyle39 (resource://devtools/server/actors/page-style.js:1007:5)", "resource://devtools/shared/protocol/Front.js", 383))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16dd92e0350 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16dd89c7020 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16dd853dcd0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16dd89c8ef0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16dd89c7ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16df6229670 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16de175a020 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16de9a11230 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 27716, MediaDecoderStateMachine #1] WARNING: 16de175b010 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1677861748670	Marionette	INFO	Stopped listening on port 54406
+Dynamically enable window occlusion 1
+[Parent 11448, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+1677861779671	geckodriver	INFO	Listening on 127.0.0.1:55043
+1677861782685	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55044" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\j00ho\\AppData\\Local\\Temp\\rust_mozprofileRJgctJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677861783716	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677861783720	Marionette	INFO	Listening on port 55051
+Read port: 55051
+WebDriver BiDi listening on ws://127.0.0.1:55044
+1677861783908	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\j00ho\\AppData\\Local\\Temp\\rust_mozprofileRJgctJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55044/devtools/browser/ee329b15-0085-4606-b1f3-16195dc91d45
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yM/l/en_US/2ymNkCA5Ma0.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yM/l/en_US/2ymNkCA5Ma0.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677861899670	Marionette	INFO	Stopped listening on port 55051
+Dynamically enable window occlusion 1
+1677861901733	geckodriver	INFO	Listening on 127.0.0.1:55169
+1677861904782	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55170" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\j00ho\\AppData\\Local\\Temp\\rust_mozprofileDWVCRg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677861905845	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677861905851	Marionette	INFO	Listening on port 55177
+Read port: 55177
+WebDriver BiDi listening on ws://127.0.0.1:55170
+1677861906049	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\j00ho\\AppData\\Local\\Temp\\rust_mozprofileDWVCRg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55170/devtools/browser/a31d5a4a-8324-4fba-b921-5d06fbdbb696
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yM/l/en_US/2ymNkCA5Ma0.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yM/l/en_US/2ymNkCA5Ma0.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yM/l/en_US/2ymNkCA5Ma0.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677861962909	Marionette	INFO	Stopped listening on port 55177
+Dynamically enable window occlusion 1
