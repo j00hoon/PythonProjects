@@ -1,12 +1,11 @@
 import time
-
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
 
 TWITTER_EMAIL = "jcoffee155@gmail.com"
-TWITTER_PASSWORD = "qortmdgns1101!AA"
+TWITTER_PASSWORD = ""
 USERNAME = "jcoffee155"
 PROMISED_DOWN = 150
 PROMISED_UP = 10
@@ -33,7 +32,7 @@ class InternetSpeedTwitterBot:
 
         time.sleep(60)
         self.driver.get(twitter_url)
-        time.sleep(3)
+        time.sleep(5)
 
         login_button = self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div[1]/a/div/span/span")
         login_button.click()
@@ -65,8 +64,8 @@ class InternetSpeedTwitterBot:
 
         input_tweet = self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div/div/label/div[1]/div/div/div/div/div/div[2]/div/div/div/div")
         input_tweet.click()
-        input_tweet = self.driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div[2]/div/div/div/div/label/div[1]/div/div/div/div/div')
-        input_tweet.send_keys(message)
+        input_tweet_2 = self.driver.find_element(By.XPATH, '//div[contains(@aria-label, "Tweet text")]')
+        input_tweet_2.send_keys(message)
         time.sleep(3)
 
         tweet_button = self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/div[2]/div[1]/div/div/div/div[2]/div[3]/div/div/div[2]/div/div/span/span")
