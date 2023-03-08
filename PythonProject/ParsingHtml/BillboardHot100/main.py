@@ -32,8 +32,8 @@ for data in list:
 
 
 
-client_id = "ca6761cefdc64c52a27ec6aa41fda87a"
-client_secret = "0eb2844205804bf4bb9508379b101faf"
+client_id = ""
+client_secret = ""
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id, client_secret=client_secret, redirect_uri="http://example.com", cache_path="token.txt", scope="playlist-modify-private"))
 
