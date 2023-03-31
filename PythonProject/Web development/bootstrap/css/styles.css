@@ -1,18 +1,12 @@
 body{
     font-family: 'Montserrat';
 }
-#title{
-    background-color: #ff4c68;
-    color: #fff;
+
+h1, h2, h3{
+    font-family: 'Montserrat-Bold';
 }
 
-h1{
-    font-family: 'Montserrat-Black';
-    font-size: 6rem;
-    line-height: 1.5;
-}
-
-h2{
+/* h2{
     font-family: 'Montserrat-Bold';
     font-size: 3rem;
     line-height: 1.5;
@@ -21,17 +15,29 @@ h2{
 h3{
     font-family: 'Montserrat-Bold';
     font-size: 3rem;
-}
+}*/
 
-.container-fluid{
-    padding: 3% 15%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Navbar-brand */
 
 .navbar{
-    padding-bottom: 4.5rem;
+    padding: 3% 5%;
 }
 
 .navbar-nav{
@@ -55,22 +61,83 @@ h3{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Download buttons */
 .download-button{
     margin: 5% 3% 5% 0;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Title image */
+
+.title-images{
+    padding: 3% 5%;
+}
+
 .rotate-image{
+    position: absolute;
     transform: rotate(30deg);
+    right: 25%;
+}
+
+#title{
+    background-color: #ff4c68;
+    color: #fff;
+    padding-bottom: 10%;
+}
+
+#title .container-fluid{
+    padding: 2% 2%;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* Features */
+#features{
+    background-color: #FFF;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 5% 15%;
+}
+
 .feature-li{
     text-align: center;
     width: 100%;
@@ -89,6 +156,17 @@ h3{
 .feature-ul{
     margin-left: 16%;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -128,6 +206,13 @@ h3{
 
 
 
+
+
+
+
+
+
+
 /* Pricing */
 #pricing{
     font-family: 'Montserrat-Bold';
@@ -149,3 +234,65 @@ h3{
 #pricing button:hover{
     background-color: #C709FD;
 }
+
+
+
+@media (max-width: 1618px){
+
+    #title{
+        text-align: center;
+    }
+
+    .rotate-image{
+        position: static;
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Call to Action */
+#cta{
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat-Bold';
+    padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#footer{
+    font-family: 'Montserrat-Bold';
+    text-align: center;
+    padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+

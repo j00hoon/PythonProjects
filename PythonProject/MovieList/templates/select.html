@@ -1,0 +1,27 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+
+{% block title %}Select Movie{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="heading">Select Movie</h1>
+  <p>
+    <a href="#"> MOVIE TITLE - MOVIE RELEASE DATE</a>
+    {% for movie in movies %}
+      <br><br>
+      <a href="{{ url_for('add', movie_title=movie['title'], movie_url=movie['poster_path'], movie_year = movie['release_date'], movie_description = movie['overview'], movie_review=movie['popularity']) }}">{{ movie.original_title }} - {{ movie.release_date }}</a>
+    {% endfor %}
+    <br>
+    <input type="button" onclick="window.location.href=' {{ url_for('home') }} ';" value="Go to home">
+  </p>
+
+</div>
+{% endblock %}
